@@ -1,11 +1,7 @@
 <template>
-  <div class="grid grid-cols-4 gap-6">
-    <div v-for="(card, idx) in cardList2" :key="idx">
-      <Card
-        @click="$router.push(`${card._path}`)"
-        :title="card.title!"
-        :description="card.description!"
-      />
+  <div class="grid grid-cols-3 gap-6">
+    <div v-for="(card, idx) in documentGroupList" :key="idx">
+      <Card @click="$router.push(`${card.path}`)" :title="card.title!" />
     </div>
   </div>
 </template>
@@ -13,72 +9,67 @@
 <script setup lang="ts">
 import Card from "@/components/local/Card.vue";
 
-const { data: cardList2 } = await useAsyncData("services", () =>
-  queryContent("/services").find(),
-);
-console.log("cardList2 ", cardList2.value);
-
-const cardList = computed(() => {
+const documentGroupList = computed(() => {
   return [
     {
-      title: "Web Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "İş Hukuku",
+      icon: "briefcase",
+      path: "/services/is-hukuku",
     },
     {
-      title: "Mobile Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Sigorta Hukuku",
+      icon: "briefcase",
+      path: "/services/sigorta-hukuku",
     },
     {
-      title: "UI/UX Design",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Gayrimenkul Ve İnsaat Hukuku",
+      icon: "briefcase",
+      path: "/services/gayrimenkul-ve-insaat-hukuku",
     },
     {
-      title: "3D Modeling",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Ticaret Ve Şirketler Hukuku",
+      icon: "briefcase",
+      path: "/services/ticaret-ve-sirketler-hukuku",
     },
     {
-      title: "Web Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Tahkim",
+      icon: "briefcase",
+      path: "/services/tahkim",
     },
     {
-      title: "Mobile Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Uluslararası Özel Hukuk",
+      icon: "briefcase",
+      path: "/services/uluslararasi-ozel-hukuk",
     },
     {
-      title: "UI/UX Design",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Ceza Hukuku",
+      icon: "briefcase",
+      path: "/services/ceza-hukuku",
     },
     {
-      title: "3D Modeling",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "İdare Ve Vergi Hukuku",
+      icon: "briefcase",
+      path: "/services/idare-ve-vergi-hukuku",
     },
     {
-      title: "Web Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Aile ve Miras Hukuku",
+      icon: "briefcase",
+      path: "/services/aile-ve-miras-hukuku",
     },
     {
-      title: "Mobile Development",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Kişisel Verilerin Korunması Hukuku",
+      icon: "briefcase",
+      path: "/services/kisisel-verilerin-korunmasi-hukuku",
     },
     {
-      title: "UI/UX Design",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "İcra ve İflas Hukuku",
+      icon: "briefcase",
+      path: "/services/icra-ve-iflas-hukuku",
     },
     {
-      title: "3D Modeling",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Dava Takibi Ve Uyuşmazlık Çözüm Yöntemleri",
+      icon: "briefcase",
+      path: "/services/dava-takibi-hukuku",
     },
   ];
 });

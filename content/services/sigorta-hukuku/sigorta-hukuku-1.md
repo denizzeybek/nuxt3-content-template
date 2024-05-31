@@ -1,5 +1,5 @@
 ---
-title: 'sample'
+title: 'sigorta hukuku 1'
 description: 'sample description'
 date: '2022-06-29'
 author: 'viandwi24'

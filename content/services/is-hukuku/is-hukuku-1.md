@@ -1,17 +1,9 @@
 ---
-title: 'personal data'
+title: 'iş hukuku 1'
 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 date: '2022-06-29'
 author: 'viandwi24'
 ---
-
-
-::callout
----
-icon: /images/nuxt_logo.png
----
-_This_ can be rich text with [Markdown]{.font-bold.bg-green-300.px-2.text-green-900}
-::
 
 
 
