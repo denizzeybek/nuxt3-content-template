@@ -1,5 +1,5 @@
 <template>
-  <header class="sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-3 lg:px-40 md:py-12 ">
+  <header class="sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-3 lg:px-40 md:py-12 border-b-2 border-gray-700 lg:h-[100px]">
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
       <div>
         <nuxt-link to="/" class="text-r-black text-2xl">NK.</nuxt-link>

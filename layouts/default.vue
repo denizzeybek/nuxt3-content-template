@@ -1,13 +1,10 @@
 <template>
-  <div class="flex min-h-screen flex-col">
+  <div class="flex min-h-screen flex-col !bg-gray-100">
     <Navbar />
     <main
-      class="bg-r-white flex flex-1 flex-col rounded-lg p-2 lg:mb-5 lg:px-40"
+      class="flex flex-1 flex-col p-12 min-h-[calc(100vh-56px)] lg:min-h-[calc(100vh-100px)] lg:px-40"
     >
-      <div id="alert" class="alert"></div>
-      <section class="flex min-h-full flex-1 flex-col rounded-b-lg">
-        <slot />
-      </section>
+      <slot />
     </main>
     <Footer />
   </div>

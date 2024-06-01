@@ -27,7 +27,6 @@ const props = withDefaults(defineProps<IProps>(), {
 const { data: dataList } = await useAsyncData(`${props.path}`, () =>
   queryContent(`/${props.path}`).find(),
 );
-console.log('dataList ', dataList.value);
 </script>
 
 <style scoped></style>
