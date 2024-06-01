@@ -4,7 +4,7 @@
     @update:isOpen="(v: boolean) => $emit('update:isOpen', v)"
     offcanvas-class="sm:!w-[۴۲۸px]"
   >
-    <template v-for="(navItem, idx) in navbarList" :key="idx">
+    <div class="mt-8" v-for="(navItem, idx) in navbarList" :key="idx">
       <nuxt-link
         :to="navItem.path"
         @click="() => $emit('update:isOpen', false)"
@@ -12,7 +12,7 @@
       >
         <GlobalText as="h2">{{ navItem.name }}</GlobalText>
       </nuxt-link>
-    </template>
+    </div>
   </GlobalOffcanvas>
 </template>
 

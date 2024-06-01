@@ -46,7 +46,7 @@ import MobileNavbar from "@/components/local/layout/MobileNavbar.vue";
 const isOpen = ref(false);
 
 const navbarList = [
-  { name: "Hakkımızda", path: "/about-us" },
+  { name: "Hakkımızda", path: "/about" },
   { name: "Hizmetlerimiz", path: "/services" },
   { name: "Makaleler", path: "/documents" },
   { name: "İletişim", path: "/contact" },
