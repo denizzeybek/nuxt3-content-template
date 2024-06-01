@@ -1,5 +1,4 @@
 <template>
-  <main>
     <header>
       <GlobalText
         as="h1"
@@ -7,10 +6,9 @@
         class-name="flex justify-center w-full uppercase mb-8"
       />
     </header>
-    <div class="prose prose-lg flex-1 text-left">
-      <ContentRenderer :value="data!" class="content-doc" />
-    </div>
-  </main>
+    <section class="prose prose-lg flex-1 max-w-none text-left w-full">
+      <ContentRenderer :value="data!" class="w-full"/>
+    </section>
 </template>
 
 <script setup lang="ts">
