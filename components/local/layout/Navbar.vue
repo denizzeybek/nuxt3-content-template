@@ -1,8 +1,12 @@
 <template>
-  <header class="sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-3 lg:px-40 md:py-12 border-b-2 border-gray-700 lg:h-[100px]">
+  <header
+    class="border-b-2 border-gray-700 sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-3 md:py-12 lg:h-[100px] lg:px-40"
+  >
     <div class="flex items-center justify-between px-4 py-3 sm:p-0">
       <div>
-        <nuxt-link to="/" class="text-r-black text-2xl">NK.</nuxt-link>
+        <nuxt-link to="/" class="text-r-black text-2xl font-bold"
+          >NK.</nuxt-link
+        >
       </div>
       <div class="sm:hidden">
         <button
@@ -29,9 +33,9 @@
       <template v-for="(navItem, idx) in navbarList" :key="idx">
         <nuxt-link
           :to="navItem.path"
-          class="block rounded px-2 py-1 font-semibold text-white"
+          class="font-norma block rounded px-2 py-1 text-lg"
         >
-          <GlobalText as="h2">{{ navItem.name }}</GlobalText>
+          <GlobalText as="span">{{ navItem.name }}</GlobalText>
         </nuxt-link>
       </template>
     </nav>
@@ -54,7 +58,7 @@ const navbarList = [
 </script>
 
 <style>
-.router-link-active h2{
-  @apply underline underline-offset-1 font-bold;
+.router-link-active h2 {
+  @apply font-bold underline underline-offset-1;
 }
 </style>

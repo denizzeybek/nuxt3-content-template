@@ -7,15 +7,15 @@
           inner-text="Bizimle İletişime Geçin"
           class-name="uppercase mb-8"
         />
-        <GlobalText as="h3" inner-text="Adres" class-name="uppercase mb-4" />
-        <GlobalText as="h4" class-name="mb-1">
+        <GlobalText as="span" inner-text="Adres" class-name="uppercase mb-4 text-2xl" />
+        <GlobalText as="span" class-name="mb-1 text-lg">
           Acıbadem Mah. Çeçen Sk. Akasya Kent Kule A3 Blok Kat:15 No: 35 Üsküdar
           / İSTANBUL - 34660
         </GlobalText>
-        <GlobalText as="h4" class-name="mb-1">
+        <GlobalText as="span" class-name="mb-1 text-lg">
           +90 (216) 308 50 50
         </GlobalText>
-        <GlobalText as="h4">
+        <GlobalText as="span" class-name="text-lg">
           info@sen.av.tr
         </GlobalText>
       </div>
