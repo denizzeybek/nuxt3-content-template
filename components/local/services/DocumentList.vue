@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-4 gap-6">
+  <div class="2xl:grid-cols-4 grid grid-cols-1 gap-6 xl:grid-cols-3">
     <div v-if="!dataList?.length">empty</div>
     <template v-else>
       <div v-for="(data, idx) in dataList" :key="idx">
@@ -17,14 +17,17 @@
 import Card from "@/components/local/Card.vue";
 
 interface IProps {
-  path: string;
+  path?: string;
 }
 
-const { path } = defineProps<IProps>();
+const props = withDefaults(defineProps<IProps>(), {
+  path: "services",
+});
 
-const { data: dataList } = await useAsyncData(`${path}`, () =>
-  queryContent(`/${path}`).find(),
+const { data: dataList } = await useAsyncData(`${props.path}`, () =>
+  queryContent(`/${props.path}`).find(),
 );
+console.log('dataList ', dataList.value);
 </script>
 
 <style scoped></style>

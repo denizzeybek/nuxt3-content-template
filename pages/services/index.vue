@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
     <div v-for="(card, idx) in documentGroupList" :key="idx">
       <Card @click="$router.push(`${card.path}`)" :title="card.title!" />
     </div>
