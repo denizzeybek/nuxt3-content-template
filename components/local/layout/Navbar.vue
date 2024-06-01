@@ -46,9 +46,15 @@ import MobileNavbar from "@/components/local/layout/MobileNavbar.vue";
 const isOpen = ref(false);
 
 const navbarList = [
-  { name: "Hakkımızda", path: "/" },
+  { name: "Hakkımızda", path: "/about-us" },
   { name: "Hizmetlerimiz", path: "/services" },
   { name: "Makaleler", path: "/documents" },
-  { name: "İletişim", path: "/" },
+  { name: "İletişim", path: "/contact" },
 ];
 </script>
+
+<style>
+.router-link-active h2{
+  @apply underline underline-offset-1 font-bold;
+}
+</style>
