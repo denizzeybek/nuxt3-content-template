@@ -4,10 +4,10 @@
       <div class="lg:col-span-1 flex flex-col justify-center">
         <GlobalText
           as="h1"
-          inner-text="Bizimle İletişime Geçin"
+          :inner-text="t('layout.footer.title')"
           class-name="uppercase mb-8"
         />
-        <GlobalText as="span" inner-text="Adres" class-name="uppercase mb-4 text-2xl" />
+        <GlobalText as="span" :inner-text="t('layout.footer.address')" class-name="uppercase mb-4 text-2xl" />
         <GlobalText as="span" class-name="mb-1 text-lg">
           Acıbadem Mah. Çeçen Sk. Akasya Kent Kule A3 Blok Kat:15 No: 35 Üsküdar
           / İSTANBUL - 34660
@@ -26,6 +26,9 @@
 
 <script setup lang="ts">
 import GlobalText from "@/components/global/Text.vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 </script>
 
 <style scoped></style>

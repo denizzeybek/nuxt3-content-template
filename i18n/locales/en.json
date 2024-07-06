@@ -1,0 +1,26 @@
+{
+  "description": "Oopsie, where am I?",
+  "backHome": "Get me back on track",
+  "pages": {
+    "home": {
+      "banner": {
+        "text": "Hi, I am <br />Nazlı Kaçar.",
+        "description": "Nazlı Kaçar Law and Consultancy was founded in 2023 by Lawyer Nazlı Kaçar. Our office, which provides services in Turkish, English and French, provides legal services and consultancy services to both local and foreign clients in more than 12 legal fields. In all types of litigation and dispute cases, at every stage of the trial process, service is provided in a solution-oriented manner with a client-first approach."
+      }
+    }
+  },
+  "layout": {
+    "navbar": {
+      "list": {
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact",
+        "documents": "Blog"
+      }
+    },
+    "footer": {
+      "title": "Contact us",
+      "address": "Address"
+    }
+  }
+}

@@ -38,6 +38,7 @@
           <GlobalText as="span">{{ navItem.name }}</GlobalText>
         </nuxt-link>
       </template>
+      <GlobalLanguageSwitcher />
     </nav>
   </header>
   <MobileNavbar v-model:isOpen="isOpen" :navbarList="navbarList" />
@@ -45,16 +46,20 @@
 
 <script setup lang="ts">
 import GlobalText from "@/components/global/Text.vue";
+import GlobalLanguageSwitcher from "@/components/global/LanguageSwitcher.vue";
 import MobileNavbar from "@/components/local/layout/MobileNavbar.vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
 
 const isOpen = ref(false);
 
-const navbarList = [
-  { name: "Hakkımızda", path: "/about" },
-  { name: "Hizmetlerimiz", path: "/services" },
-  { name: "Makaleler", path: "/documents" },
-  { name: "İletişim", path: "/contact" },
-];
+const navbarList = computed(() => [
+  { name: t('layout.navbar.list.about'), path: "/about" },
+  { name: t('layout.navbar.list.services'), path: "/services" },
+  { name: t('layout.navbar.list.documents'), path: "/documents" },
+  { name: t('layout.navbar.list.contact'), path: "/contact" },
+]);
 </script>
 
 <style>

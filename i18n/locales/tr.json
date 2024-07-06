@@ -1,0 +1,26 @@
+{
+  "description": "haydaa, neredeyim?",
+  "backHome": "Beni doğru yola koy",
+  "pages": {
+    "home": {
+      "banner": {
+        "text": "Merhaba, Ben <br />Nazlı Kaçar.",
+        "description": "Nazlı Kaçar Hukuk ve Danışmanlık, Av.Nazlı Kaçar tarafından 2023 yılında kurulmuştur. Türkçe, İngilizce ve Fransızca dillerinde hizmet verilen büromuzda, 12’yi aşkın hukuk alanında, hem yerel hem yabancı müvekkillere avukatlık ve danışmanlık hizmeti sunulmaktadır. Her türden dava süreci ve uyuşmazlık hallerinde, yargılama sürecinin her aşamasında, müvekkil öncelikli bir yaklaşım ile çözüm odaklı şekilde hizmet verilmektedir."
+      }
+    }
+  },
+  "layout": {
+    "navbar": {
+      "list": {
+        "about": "Hakkımda",
+        "services": "Hizmetlerimiz",
+        "contact": "İletişim",
+        "documents": "Makaleler"
+      }
+    },
+    "footer": {
+      "title": "Bizimle iletişime geçin",
+      "address": "Adres"
+    }
+  }
+}
