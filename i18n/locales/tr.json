@@ -7,6 +7,33 @@
         "text": "Merhaba, Ben <br />Nazlı Kaçar.",
         "description": "Nazlı Kaçar Hukuk ve Danışmanlık, Av.Nazlı Kaçar tarafından 2023 yılında kurulmuştur. Türkçe, İngilizce ve Fransızca dillerinde hizmet verilen büromuzda, 12’yi aşkın hukuk alanında, hem yerel hem yabancı müvekkillere avukatlık ve danışmanlık hizmeti sunulmaktadır. Her türden dava süreci ve uyuşmazlık hallerinde, yargılama sürecinin her aşamasında, müvekkil öncelikli bir yaklaşım ile çözüm odaklı şekilde hizmet verilmektedir."
       }
+    },
+    "about": {
+      "banner": {
+        "title": "Merhaba, Ben <br />Nazlı Kaçar.",
+        "description": "Nazlı Kaçar; İstanbul Beykent Üniversitesi’nden 2021 tarihinde yüksek onur derecesi ile mezun olmuştur. 2021 yılından 2023 yılına dek İstanbul Barosu bünyesinde avukatlık hizmetini İstanbul’da yapmıştır. 2023 yılında ise Kuşadası’nda kendi ofisini açarak NK Hukuk ve Danışmanlık adı altında hizmet vermeye başlamıştır.",
+        "description_2": "Nazlı Kaçar; Aydın Barosu’na kayıtlı avukatlık mesleğine devam etmektedir.",
+        "list": {
+          "school": {
+            "title": "Eğitim",
+            "description": "İstanbul Beykent Üniversitesi"
+          },
+          "languages": {
+            "title": "Diller",
+            "turkish": "Türkçe",
+            "english": "İngilizce",
+            "french": "Fransızca"
+          },
+          "working_areas": {
+            "title": "Çalışma Alanları",
+            "insurance": "Sigorta Hukuku",
+            "arbitration": "Tahkim Hukuku",
+            "private_international": "Uluslararası Özel Hukuk",
+            "commercial_and_corporate_law": "Ticaret ve Şirketler Hukuku",
+            "informatics": "Bilişim Hukuku"
+          }
+        }
+      }
     }
   },
   "layout": {

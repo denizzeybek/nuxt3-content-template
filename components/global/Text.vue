@@ -76,10 +76,10 @@ p {
 }
 
 p.info {
-  @apply text-d-secondary;
+  @apply text-d-secondary font-light;
 }
 
 p.ps {
-  @apply italic text-d-primary;
+  @apply text-d-black;
 }
 </style>
