@@ -6,11 +6,17 @@
     >
       <slot />
     </main>
-    <Footer />
+    <Footer v-if="showFooter"/>
   </div>
 </template>
 
 <script setup lang="ts">
 import Navbar from "~/components/local/layout/Navbar.vue";
 import Footer from "~/components/local/layout/Footer.vue";
+
+const route = useRoute();
+
+const showFooter = computed(() => {
+  return route.path !== "/contact";
+});
 </script>
