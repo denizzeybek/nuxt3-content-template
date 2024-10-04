@@ -1,5 +1,5 @@
 <template>
-  <DocumentList :path="`services/${locale}`" />
+  <DocumentList :path="`services/${locale}/uluslararasi-ozel-hukuk`" />
 </template>
 
 <script setup lang="ts">

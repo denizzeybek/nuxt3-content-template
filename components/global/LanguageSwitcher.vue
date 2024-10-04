@@ -1,8 +1,8 @@
 <!-- components/LanguageSwitcher.vue -->
 <template>
-  <select v-model="selectedLocale" @change="changeLocale(($event.target as HTMLSelectElement).value)">
-    <option v-for="locale in availableLocales" :key="locale" :value="locale">
-      {{ locale }}
+  <select class="px-4 py-2 rounded-md" v-model="selectedLocale" @change="changeLocale(($event.target as HTMLSelectElement).value)">
+    <option class="bg-white" v-for="locale in availableLocales" :key="locale" :value="locale">
+      {{ setLocaleText(locale) }}
     </option>
   </select>
 </template>
@@ -25,5 +25,16 @@ const changeLocale = (lang: string) => {
 };
 
 changeLocale(languageCookie.value)
+
+const setLocaleText = (lang: string) => {
+  switch (lang) {
+    case "tr":
+      return "Türkçe";
+    case "en":
+      return "English";
+    default:
+      return "Türkçe";
+  }
+};
 
 </script>

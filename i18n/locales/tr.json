@@ -34,6 +34,22 @@
           }
         }
       }
+    },
+    "services": {
+      "list": {
+        "business": "İş Hukuku",
+        "insurance": "Sigorta Hukuku",
+        "real_estate": "Gayrimenkul ve İnşaat Hukuku",
+        "trade": "Ticaret ve Şirketler Hukuku",
+        "arbitration": "Tahkim Hukuku",
+        "international": "Uluslararası Özel Hukuk",
+        "criminal": "Ceza Hukuku",
+        "tax": "İdare ve Vergi Hukuku",
+        "family": "Aile ve Miras Hukuku",
+        "personal": "Kişisel Verilerin Korunması Hukuku",
+        "enforcement": "İcra ve İflas Hukuku",
+        "litigation": "Dava ve Uyuşmazlık Çözüm Yöntemleri"
+      }
     }
   },
   "layout": {
@@ -49,5 +65,8 @@
       "title": "Bizimle iletişime geçin",
       "address": "Adres"
     }
+  },
+  "common": {
+    "close": "Kapat"
   }
 }

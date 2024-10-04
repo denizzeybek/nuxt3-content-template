@@ -34,6 +34,22 @@
           }
         }
       }
+    },
+    "services": {
+      "list": {
+        "business": "Business Law",
+        "insurance": "Insurance Law",
+        "real_estate": "Real Estate and Construction Law",
+        "trade": "Commercial and Corporate Law",
+        "arbitration": "Arbitration Law",
+        "international": "Private International Law",
+        "criminal": "Criminal Law",
+        "tax": "Administrative and Tax Law",
+        "family": "Family and Inheritance Law",
+        "personal": "Personal Data Protection Law",
+        "enforcement": "Enforcement and Insolvency Law",
+        "litigation": "Litigation and Dispute Resolution Methods"
+      }
     }
   },
   "layout": {
@@ -49,5 +65,8 @@
       "title": "Contact us",
       "address": "Address"
     }
+  },
+  "common": {
+    "close": "Close"
   }
 }

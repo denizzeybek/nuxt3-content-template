@@ -8,68 +8,73 @@
 
 <script setup lang="ts">
 import Card from "@/components/local/Card.vue";
+import { useI18n } from "vue-i18n";
+
+const { locale } = useI18n();
+console.log('locale ', locale.value);
+const { t } = useI18n();
 
 const documentGroupList = computed(() => {
   return [
     {
-      title: "İş Hukuku",
+      title:t('pages.services.list.business'),
       icon: "briefcase",
-      path: "/services/is-hukuku",
+      path: `/services/${locale.value}/is-hukuku`,
     },
     {
-      title: "Sigorta Hukuku",
+      title:t('pages.services.list.insurance'),
       icon: "briefcase",
-      path: "/services/sigorta-hukuku",
+      path: `/services/${locale.value}/sigorta-hukuku`,
     },
     {
-      title: "Gayrimenkul Ve İnsaat Hukuku",
+      title:t('pages.services.list.real_estate'),
       icon: "briefcase",
-      path: "/services/gayrimenkul-ve-insaat-hukuku",
+      path: `/services/${locale.value}/gayrimenkul-ve-insaat-hukuku`,
     },
     {
-      title: "Ticaret Ve Şirketler Hukuku",
+      title:t('pages.services.list.trade'),
       icon: "briefcase",
-      path: "/services/ticaret-ve-sirketler-hukuku",
+      path: `/services/${locale.value}/ticaret-ve-sirketler-hukuku`,
     },
     {
-      title: "Tahkim",
+      title:t('pages.services.list.arbitration'),
       icon: "briefcase",
-      path: "/services/tahkim",
+      path: `/services/${locale.value}/tahkim`,
     },
     {
-      title: "Uluslararası Özel Hukuk",
+      title:t('pages.services.list.international'),
       icon: "briefcase",
-      path: "/services/uluslararasi-ozel-hukuk",
+      path: `/services/${locale.value}/uluslararasi-ozel-hukuk`,
     },
     {
-      title: "Ceza Hukuku",
+      title:t('pages.services.list.criminal'),
       icon: "briefcase",
-      path: "/services/ceza-hukuku",
+      path: `/services/${locale.value}/ceza-hukuku`,
     },
     {
-      title: "İdare Ve Vergi Hukuku",
+      title:t('pages.services.list.tax'),
       icon: "briefcase",
-      path: "/services/idare-ve-vergi-hukuku",
+      path: `/services/${locale.value}/idare-ve-vergi-hukuku`,
     },
     {
-      title: "Aile ve Miras Hukuku",
+      title:t('pages.services.list.family'),
       icon: "briefcase",
-      path: "/services/aile-ve-miras-hukuku",
+      path: `/services/${locale.value}/aile-ve-miras-hukuku`,
     },
     {
-      title: "Kişisel Verilerin Korunması Hukuku",
+      title:t('pages.services.list.personal'),
       icon: "briefcase",
-      path: "/services/kisisel-verilerin-korunmasi-hukuku",
+      path: `/services/${locale.value}/kisisel-verilerin-korunmasi-hukuku`,
     },
     {
-      title: "İcra ve İflas Hukuku",
+      title:t('pages.services.list.enforcement'),
       icon: "briefcase",
-      path: "/services/icra-ve-iflas-hukuku",
+      path: `/services/${locale.value}/icra-ve-iflas-hukuku`,
     },
     {
-      title: "Dava Takibi Ve Uyuşmazlık Çözüm Yöntemleri",
+      title:t('pages.services.list.litigation'),
       icon: "briefcase",
-      path: "/services/dava-takibi-hukuku",
+      path: `/services/${locale.value}/dava-takibi-hukuku`,
     },
   ];
 });

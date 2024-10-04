@@ -29,11 +29,11 @@
         </button>
       </div>
     </div>
-    <nav :class="isOpen ? '' : 'hidden'" class="px-2 pb-4 pt-2 sm:flex sm:p-0">
+    <nav :class="isOpen ? '' : 'hidden'" class="flex gap-4  py-4 sm:flex sm:p-0">
       <template v-for="(navItem, idx) in navbarList" :key="idx">
         <nuxt-link
           :to="navItem.path"
-          class="font-norma block rounded px-2 py-1 text-lg"
+          class="font-norma block rounded py-1 text-lg"
         >
           <GlobalText as="span">{{ navItem.name }}</GlobalText>
         </nuxt-link>

@@ -16,7 +16,7 @@
         variant="light"
         class="flex h-[52px] min-w-[52px] items-center justify-center rounded-full"
       >
-        kapat
+        {{ t('common.close') }}
       </GlobalButton>
       <RText as="h1">{{ title }}</RText>
     </header>
@@ -26,6 +26,10 @@
 
 <script lang="ts" setup>
 import GlobalButton from "@/components/global/Button.vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
 export interface IProps {
   title?: string;
   isOpen: boolean;
