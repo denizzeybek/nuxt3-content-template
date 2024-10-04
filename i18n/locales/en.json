@@ -4,13 +4,13 @@
   "pages": {
     "home": {
       "banner": {
-        "text": "Hi, I am <br />Nazlı Kaçar.",
+        "text": "Lawyer Nazlı Kaçar<br/>Law&Consulting",
         "description": "Nazlı Kaçar Law and Consultancy was founded in 2023 by Lawyer Nazlı Kaçar. Our office, which provides services in Turkish, English and French, provides legal services and consultancy services to both local and foreign clients in more than 12 legal fields. In all types of litigation and dispute cases, at every stage of the trial process, service is provided in a solution-oriented manner with a client-first approach."
       }
     },
     "about": {
       "banner": {
-        "title": "Hi, I am <br />Nazlı Kaçar.",
+        "title": "Lawyer Nazlı Kaçar<br/>Law&Consulting",
         "description": "Nazlı Kaçar graduated with high honors from Istanbul Beykent University in 2021. From 2021 to 2023, she practiced law under the Istanbul Bar Association in Istanbul. In 2023, she opened her own office in Kuşadası under the name NK Law and Consultancy, where she continues to provide legal services.",
         "description_2": "Nazlı Kaçar is a registered lawyer at the Aydın Bar Association.",
         "list": {

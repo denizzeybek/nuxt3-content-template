@@ -24,4 +24,12 @@ export default defineNuxtConfig({
       plugins: [tailwindTypography],
     },
   },
+  components: {
+    dirs: [
+      {
+        path: '~/components/global',
+        pathPrefix: false // to disable auto-import in this directory
+      }
+    ]
+  }
 });

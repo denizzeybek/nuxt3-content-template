@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
 import GlobalOffcanvas from "@/components/global/Offcanvas.vue";
-import GlobalText from "@/components/global/Text.vue";
+import GlobalText from "~/components/global/Text.vue";
 
 interface IProps {
   isOpen: boolean;

@@ -2,10 +2,10 @@
   <div class="grid grid-cols-1 gap-40 lg:grid-cols-3">
     <div
       id="google-maps"
-      class="h-[300px] w-full bg-slate-300 "
+      class="h-[300px] w-full bg-slate-300"
       :class="customClass"
     ></div>
-    <div class="flex flex-col justify-center lg:col-span-1" >
+    <div class="flex flex-col justify-center lg:col-span-1">
       <GlobalText
         as="h1"
         :inner-text="t('layout.footer.title')"
@@ -25,28 +25,26 @@
       </GlobalText>
       <GlobalText as="span" class-name="text-lg"> info@sen.av.tr </GlobalText>
     </div>
-
   </div>
 </template>
 
 <script setup lang="ts">
-import GlobalText from "@/components/global/Text.vue";
+import GlobalText from "~/components/global/Text.vue";
 import { useI18n } from "vue-i18n";
 
 const { t } = useI18n();
 
 interface IProps {
-    colSpan?: number;
-    order?: number;
-    customClass?: string;
+  colSpan?: number;
+  order?: number;
+  customClass?: string;
 }
 
 withDefaults(defineProps<IProps>(), {
-    colSpan: 1,
-    order: 1,
-    customClass: 'lg:col-span-2'
+  colSpan: 1,
+  order: 1,
+  customClass: "lg:col-span-2",
 });
-
 </script>
 
 <style scoped></style>

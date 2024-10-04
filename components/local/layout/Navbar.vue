@@ -29,7 +29,7 @@
         </button>
       </div>
     </div>
-    <nav :class="isOpen ? '' : 'hidden'" class="flex gap-4  py-4 sm:flex sm:p-0">
+    <nav :class="isOpen ? '' : 'hidden'" class="gap-4 py-4 sm:flex sm:p-0">
       <template v-for="(navItem, idx) in navbarList" :key="idx">
         <nuxt-link
           :to="navItem.path"
@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-import GlobalText from "@/components/global/Text.vue";
+import GlobalText from "~/components/global/Text.vue";
 import GlobalLanguageSwitcher from "@/components/global/LanguageSwitcher.vue";
 import MobileNavbar from "@/components/local/layout/MobileNavbar.vue";
 import { useI18n } from "vue-i18n";
@@ -55,10 +55,10 @@ const { t } = useI18n();
 const isOpen = ref(false);
 
 const navbarList = computed(() => [
-  { name: t('layout.navbar.list.about'), path: "/about" },
-  { name: t('layout.navbar.list.services'), path: "/services" },
-  { name: t('layout.navbar.list.documents'), path: "/documents" },
-  { name: t('layout.navbar.list.contact'), path: "/contact" },
+  { name: t("layout.navbar.list.about"), path: "/about" },
+  { name: t("layout.navbar.list.services"), path: "/services" },
+  { name: t("layout.navbar.list.documents"), path: "/documents" },
+  { name: t("layout.navbar.list.contact"), path: "/contact" },
 ]);
 </script>
 
